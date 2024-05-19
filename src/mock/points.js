@@ -23,7 +23,7 @@ export const points = [
     destination: 'bfa5cb75-a1fe-4b77-a83c-0e528e910e05',
     isFavorite: true,
     offers: [
-      'b4c3e4e6-9053-42ce-b747-e281314baa34'
+      '2'
     ],
     type: 'train'
   },
