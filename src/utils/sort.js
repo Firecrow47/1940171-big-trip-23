@@ -1,7 +1,8 @@
 import dayjs from 'dayjs';
 
+
 function sortDay (eventA, eventB) {
-  return dayjs(eventA.dateFrom).diff(dayjs(eventB.dateFrom));
+  return dayjs(eventB.dateFrom) - dayjs(eventA.dateFrom);
 }
 
 function sortTime (eventA, eventB) {
@@ -9,7 +10,7 @@ function sortTime (eventA, eventB) {
 }
 
 function sortPrice (eventA, eventB) {
-  return eventB.basePrice - eventA.basePrice;
+  return Number(eventB.basePrice) - Number(eventA.basePrice);
 }
 
 export {sortDay, sortTime, sortPrice};
